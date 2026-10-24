@@ -1,0 +1,15 @@
+.env
+.env.*
+!.env.example
+vendor/
+node_modules/
+__pycache__/
+*.pyc
+*.egg-info/
+.venv/
+build/
+dist/
+target/
+bin/
+obj/
+artifacts/

@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+[project]
+name = "jsonscraper-tiktok"
+version = "0.1.0"
+description = "Python SDK for jsonscraper TikTok Scraper API"
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+keywords = ["tiktok", "tiktok-scraper-api", "api-client", "sdk", "jsonscraper"]
+[project.urls]
+Homepage = "https://jsonscraper.com"
+Repository = "https://github.com/jsonscraper/tiktok-api-python"
+[tool.setuptools.packages.find]
+where = ["src"]
