@@ -2,7 +2,7 @@
 
 ## 0.1.0
 
-- Initial Instagram and TikTok clients, 151 unique routes.
-- Configurable transport, timeouts, bounded retries, server cache parameters.
-- Query encoding, credential-safe errors, no redirect following.
-- Endpoint reference, examples and local contract tests.
+- Dedicated TikTok Scraper API client with 54 documented routes.
+- Configurable timeouts, server cache controls, bounded retries and credential-safe errors.
+- Product-specific package name and namespace.
+- Detailed onboarding, response examples, request catalogue and offline contract tests.

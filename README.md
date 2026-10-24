@@ -21,6 +21,7 @@ Official Python client for the [jsonscraper TikTok Scraper API](https://jsonscra
 - [License key and access](#2-get-api-access)
 - [First request](#3-make-your-first-request)
 - [Request examples](#more-request-examples)
+- [Complete example catalogue](#complete-request-example-catalogue)
 - [Endpoint reference](docs/endpoints.md)
 - [Configuration](#configuration)
 - [Errors, pagination and caching](#errors-pagination-and-caching)
@@ -106,6 +107,112 @@ Use the generic request method for newly added routes without waiting for an SDK
 - [Read a page of user videos](examples/feed.py) — `GET /getUserFeed`.
 
 These examples make one request each. They never loop automatically through your quota. For feed pagination, inspect the returned cursor and `has_more`, then pass the cursor back to the same endpoint.
+
+## Complete request example catalogue
+
+Every link opens a full program with parameters, authentication, timeout, errors and output handling. **[Running the examples](examples/README.md)** explains the commands.
+
+<details>
+<summary>Video · 6 examples</summary>
+
+- [Get non watermarked video url](examples/endpoints/get_no_watermark_url.py) — `GET /getNoWatermarkUrl`.
+- [Get non watermarked video url by video ID](examples/endpoints/get_no_watermark_url_by_id.py) — `GET /getNoWatermarkUrlByID`.
+- [Get video info by ID](examples/endpoints/get_video_by_id.py) — `GET /getVideoByID`.
+- [Get video info by URL](examples/endpoints/get_video_by_url.py) — `GET /getVideoByUrl`.
+- [Convert short TikTok video URL to full TikTok video URL](examples/endpoints/get_unshortened_url.py) — `GET /getUnshortenedUrl`.
+- [Get video by playlist ID](examples/endpoints/get_video_by_playlist_id.py) — `GET /getVideoByPlaylistID`.
+
+</details>
+
+<details>
+<summary>Comments · 3 examples</summary>
+
+- [Get comments list by video URL](examples/endpoints/get_comments_by_url.py) — `GET /getCommentsByUrl`.
+- [Get comments list by video ID](examples/endpoints/get_comments_by_id.py) — `GET /getCommentsByID`.
+- [Get comments replies](examples/endpoints/get_comments_replies.py) — `GET /getCommentsReplies`.
+
+</details>
+
+<details>
+<summary>Search · 9 examples</summary>
+
+- [Search for user by keyword](examples/endpoints/search_user.py) — `GET /searchUser`.
+- [Search for video by keyword](examples/endpoints/search_video.py) — `GET /searchVideo`.
+- [Search for music by keyword](examples/endpoints/search_music.py) — `GET /searchMusic`.
+- [Search for live by keyword](examples/endpoints/search_live.py) — `GET /searchLive`.
+- [Search for hashtag by keyword](examples/endpoints/search_hashtag.py) — `GET /searchHashtag`.
+- [Search for location by keyword](examples/endpoints/search_location.py) — `GET /searchLocation`.
+- [Top search by text query](examples/endpoints/search_top.py) — `GET /searchTop`.
+- [Search insights by text query](examples/endpoints/search_insights.py) — `GET /searchInsights`.
+- [Search comment suggested users](examples/endpoints/search_comment_suggested_users.py) — `GET /searchCommentSuggestedUsers`.
+
+</details>
+
+<details>
+<summary>Users And Feeds · 16 examples</summary>
+
+- [Get user info by profile URL or nickname](examples/endpoints/get_user_info.py) — `GET /getUserInfo`.
+- [Get user info by profile ID](examples/endpoints/get_user_info_by_id.py) — `GET /getUserInfoByID`.
+- [Get user info by username](examples/endpoints/get_basic_user_info.py) — `GET /getBasicUserInfo`.
+- [Get user feed by profile URL or nickname](examples/endpoints/get_user_feed.py) — `GET /getUserFeed`.
+- [Get user feed by profile ID](examples/endpoints/get_user_feed_by_id.py) — `GET /getUserFeedByID`.
+- [Get user ID by profile URL or nickname](examples/endpoints/get_user_id.py) — `GET /getUserID`.
+- [Get username by TikTok user ID](examples/endpoints/get_username_by_id.py) — `GET /getUsernameByID`.
+- [Get Twitter username by profile URL, nickname or TikTok user ID](examples/endpoints/get_twitter_username.py) — `GET /getTwitterUsername`.
+- [Get Instagram username by profile URL, nickname or TikTok user ID](examples/endpoints/get_instagram_username.py) — `GET /getInstagramUsername`.
+- [Get user followers by profile URL or nickname](examples/endpoints/get_followers.py) — `GET /getFollowers`.
+- [Get user followers by profile ID](examples/endpoints/get_followers_by_id.py) — `GET /getFollowersByID`.
+- [Get user following by profile URL or nickname](examples/endpoints/get_following.py) — `GET /getFollowing`.
+- [Get user following by profile ID](examples/endpoints/get_following_by_id.py) — `GET /getFollowingByID`.
+- [Get user stories](examples/endpoints/get_user_stories.py) — `GET /getUserStories`.
+- [Get user playlists](examples/endpoints/get_user_playlists.py) — `GET /getUserPlaylists`.
+- [Get user playlist by ID](examples/endpoints/get_user_playlist_by_id.py) — `GET /getUserPlaylistByID`.
+
+</details>
+
+<details>
+<summary>Other Endpoints · 11 examples</summary>
+
+- [Get YouTube channel info by profile URL, nickname or TikTok user ID](examples/endpoints/get_youtube_channel.py) — `GET /getYoutubeChannel`.
+- [Get location info by ID](examples/endpoints/get_location_info_by_id.py) — `GET /getLocationInfoByID`.
+- [Get videos by location ID](examples/endpoints/get_location_feed_by_id.py) — `GET /getLocationFeedByID`.
+- [Get trending categories list](examples/endpoints/get_trending_categories_list.py) — `GET /getTrendingCategoriesList`.
+- [Get trending feed](examples/endpoints/get_trending_feed.py) — `GET /getTrendingFeed`.
+- [Get effect information by IDs](examples/endpoints/get_stickers_by_id.py) — `GET /getStickersByID`.
+- [Get effect information by ID](examples/endpoints/get_sticker_by_id.py) — `GET /getStickerByID`.
+- [Get videos by effect ID](examples/endpoints/get_sticker_feed_by_id.py) — `GET /getStickerFeedByID`.
+- [Get story info by ID](examples/endpoints/get_story_info_by_id.py) — `GET /getStoryInfoByID`.
+- [Get available ranking list](examples/endpoints/get_available_ranking_list.py) — `GET /getAvailableRankingList`.
+- [Get ranking info](examples/endpoints/get_ranking_info.py) — `GET /getRankingInfo`.
+
+</details>
+
+<details>
+<summary>Live · 3 examples</summary>
+
+- [Get live event info by ID](examples/endpoints/get_live_event_info_by_id.py) — `GET /getLiveEventInfoByID`.
+- [Get live info](examples/endpoints/get_live_info.py) — `GET /getLiveInfo`.
+- [Get live feed](examples/endpoints/get_live_feed.py) — `GET /getLiveFeed`.
+
+</details>
+
+<details>
+<summary>Hashtags · 3 examples</summary>
+
+- [Get hashtag info by URL or tag name](examples/endpoints/get_hashtag_info.py) — `GET /getHashtagInfo`.
+- [Get hashtag feed by URL or tag name](examples/endpoints/get_hashtag_feed.py) — `GET /getHashtagFeed`.
+- [Get hashtag feed by ID](examples/endpoints/get_hashtag_feed_by_id.py) — `GET /getHashtagFeedByID`.
+
+</details>
+
+<details>
+<summary>Music · 3 examples</summary>
+
+- [Get music info by URL or ID](examples/endpoints/get_music_info.py) — `GET /getMusicInfo`.
+- [Get music feed by URL or ID](examples/endpoints/get_music_feed.py) — `GET /getMusicFeed`.
+- [Get music charts](examples/endpoints/get_music_charts.py) — `GET /getMusicCharts`.
+
+</details>
 
 ## Configuration
 
