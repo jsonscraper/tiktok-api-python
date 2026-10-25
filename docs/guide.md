@@ -41,7 +41,7 @@ This repository contains the **TikTok SDK only**. It calls the hosted jsonscrape
 Requirements: **Python 3.10+**.
 
 ```sh
-python -m pip install "git+https://github.com/jsonscraper/tiktok-api-python.git@v0.1.0"
+python -m pip install "git+https://github.com/jsonscraper/tiktok-api-python.git@0.1.0"
 ```
 
 The GitHub installation above works independently of package registry registration. A public PyPI/npm/Packagist listing is a separate release step; this README does not claim those listings already exist.
