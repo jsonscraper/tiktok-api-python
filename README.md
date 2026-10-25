@@ -23,7 +23,7 @@ export JSONSCRAPER_TIKTOK_LICENSE_KEY='your-license-key'
 **2. Install the package:**
 
 ```sh
-python -m pip install "git+https://github.com/jsonscraper/tiktok-api-python.git@0.1.0"
+python -m pip install "git+https://github.com/jsonscraper/tiktok-api-python.git@0.1.1"
 ```
 
 **3. Make a request:**

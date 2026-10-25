@@ -1,3 +1,9 @@
+# 0.1.1
+
+- Simplify the first-request guide and method navigation.
+- Add product-specific MCP connections for ChatGPT and Codex.
+- Use numeric release names and installation references.
+
 # Changelog
 
 ## 0.1.0

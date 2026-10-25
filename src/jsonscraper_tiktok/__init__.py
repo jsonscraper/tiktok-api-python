@@ -44,7 +44,7 @@ class Client:
             params.setdefault("cache_timeout", self.cache_timeout)
         params["license_key"] = self._key
         query = urlencode({k: str(v).lower() if isinstance(v, bool) else v for k, v in params.items()}, doseq=True)
-        req = Request(self.base_url + path + "?" + query, headers={"Accept": "application/json", "User-Agent": "jsonscraper-python/0.1.0"})
+        req = Request(self.base_url + path + "?" + query, headers={"Accept": "application/json", "User-Agent": "jsonscraper-python/0.1.1"})
         for attempt in range(self.retries + 1):
             try:
                 with self._opener.open(req, timeout=self.timeout) as response:
